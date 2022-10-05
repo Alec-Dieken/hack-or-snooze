@@ -61,6 +61,8 @@ function showMyStories() {
   $("li").each((i, el) => {
     if (!myStories.has($(el).attr("id"))) {
       $(el).hide();
+    } else {
+      $(el).show();
     }
   });
 
