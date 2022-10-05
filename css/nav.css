@@ -1,0 +1,74 @@
+/* Navigation bar */
+
+nav {
+  display: flex;
+  background-color: #191c1e;
+  align-items: baseline;
+  padding: 5px 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.navbar-brand h1{
+  color: #e0e0e0;
+  font-family: vt323;
+  font-weight: 400;
+  font-size: 2.2em;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 10px;
+  user-select: none;
+}
+
+.nav-link, #nav-logout {
+  color: white;
+  font-size: 0.85rem;
+  font-family: robo-reg;
+}
+
+.nav-left {
+  margin-left: 15px;
+}
+
+.nav-left .nav-link {
+  margin: 0 12px;
+}
+
+.nav-right {
+  margin-left: auto;
+  text-align: right;
+}
+
+#nav-user-profile {
+  color: #41698d;
+}
+
+/* **************************************************************** */
+
+i {
+  margin: 0 3px;
+  transition: all 0.5s;
+}
+
+.delete > i {
+  margin-right: 6px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.star > .far:hover {
+  color: darkgoldenrod;
+}
+
+.star > .fas{
+  color:darkgoldenrod;
+}
+
+.star > .fas:hover{
+  color: gray;
+}
+
+.delete > i:hover {
+  color: crimson;
+}

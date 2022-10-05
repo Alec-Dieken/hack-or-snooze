@@ -1,0 +1,46 @@
+/* Login and signup forms */
+
+.account-form {
+  color: white;
+  font-family: robo-reg;
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.account-form h4 {
+  text-align: center;
+}
+.login-input {
+  text-align: right;
+}
+.account-form input {
+  text-align: left;
+}
+
+.account-form button {
+  width: 4rem;  
+  text-align: center;
+}
+
+#signup-form > * {
+  margin: 10px 0;
+}
+
+#login-form > * {
+  margin: 10px 0;
+}
+
+#login-form {
+  border-bottom: solid 1px gray;
+}
+
+#signup-form > button {
+  width: 8rem;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.account-forms-container {
+  padding-left: 20px;
+}
