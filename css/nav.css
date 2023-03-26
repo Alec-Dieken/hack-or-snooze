@@ -3,10 +3,11 @@
 nav {
   display: flex;
   background-color: #191c1e;
-  align-items: baseline;
+  align-items: center;
   padding: 5px 20px;
   border-radius: 20px 20px 0 0;
 }
+
 
 .navbar-brand h1{
   color: #e0e0e0;
@@ -17,12 +18,29 @@ nav {
   margin: 0;
   padding: 10px;
   user-select: none;
+  width: 244px;
 }
+
+.navbar-brand span{
+  font-size: 0.9em;
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
+#nav-main-container {
+  width: calc(860px - 244px);
+  display: flex;
+  align-items: center;
+}
+
 
 .nav-link, #nav-logout {
   color: white;
   font-size: 0.85rem;
   font-family: robo-reg;
+  overflow-wrap: normal;
 }
 
 .nav-left {
@@ -71,4 +89,18 @@ i:hover {
 
 .delete > i:hover {
   color: crimson;
+}
+
+@media screen and (max-width: 960px) {
+  nav {
+    border-radius: 0;
+  }
+  .navbar-brand h1{
+    font-size: 1.8em;
+    line-height: 1em;
+    width: 184px;
+  }
+  #nav-main-container {
+    width: calc(100% - 184px);
+  }
 }

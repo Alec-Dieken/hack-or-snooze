@@ -1,7 +1,7 @@
 /* General typography */
 body {
   margin: 0;
-  background-color: #0b161f;
+  background-color: #1a2732;
 }
 
 #main-container {
@@ -9,17 +9,9 @@ body {
   width: 900px;
   margin: 50px auto;
   border-radius: 20px;
-  box-shadow: 30px 30px 20px rgb(8, 15, 22);
+  box-shadow: 30px 30px 20px rgb(14, 24, 34);
  
 }
-
-/* h1 {
-  font-family: vt323;
-  font-weight: 400;
-  font-size: 2.2em;
-  margin: 0;
-  padding: 10px;
-} */
 
 h4 {
   font-size: 1rem;
@@ -59,43 +51,6 @@ a:hover {
   display: none;
 }
 
-
-/* Forms */
-
-/* form {
-  display: flex;
-  flex-direction: column;
-  margin: 8px 18px 0;
-}
-
-form > * {
-  margin: 10px 0;
-}
-
-form label {
-  font-size: 0.9rem;
-  font-weight: 700;
-  display: inline;
-  width: 3.5rem;
-  text-align: right;
-  margin-right: 5px;
-}
-
-form input {
-  font-size: 0.8rem;
-  border: none;
-  border-radius: 2px;
-  padding: 8px;
-  width: 300px;
-  box-shadow: 0 0 3px 1px lightgray;
-  display: inline;
-}
-
-form input:focus {
-  outline: none;
-  box-shadow: 0 0 4px 1px darkgray;
-}
-/*  */
 form > button {
   width: 3rem;
   border: none;
@@ -113,30 +68,23 @@ form > button:hover {
   background-color: #588ab6;
 }
 
-/* form > hr {
-  margin: 0;
-  border: 1px solid lightgray;
-} 
-
-.login-input label {
-  width: 70px;
-} */
-
 
 /* responsive queries for tightening things up for mobile. */
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 960px) {
   body {
     margin: 0;
+    background-color: #101213;
+  }
+  #main-container {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    height: fit-content;
+    box-shadow: none;
   }
 }
 
-@media screen and (min-width: 992px) {
-  body {
-    max-width: 900px;
-    margin: 8px auto;
-  }
-}
+
 
 @font-face {
   font-family: vt323;

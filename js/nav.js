@@ -11,6 +11,7 @@ function navAllStories(evt) {
   updatePage();
 }
 $body.on("click", "#nav-home", navAllStories);
+$logo.on("click", navAllStories);
 
 /** Show login/signup on click on "login" */
 function navLoginClick(evt) {
@@ -19,6 +20,15 @@ function navLoginClick(evt) {
   $signupForm.show();
 }
 $navLogin.on("click", navLoginClick);
+
+/**  */
+function navLogoClick(evt) {
+  showPageComponents();
+  $loginForm.hide();
+  $signupForm.hide();
+  
+}
+$logo.on("click", navLogoClick);
 
 /** When a user first logins in, update the navbar to reflect that. */
 function updateNavOnLogin() {
@@ -30,7 +40,6 @@ function updateNavOnLogin() {
   $(".main-nav-links").show();
 }
 
-///////////////////////////////////////////////////////////
 /** Show add story form when user clicks on "Post Story" link */
 $("#nav-submit").on("click", showAddStory);
 function showAddStory() {
@@ -40,7 +49,6 @@ function showAddStory() {
   updatePage();
 }
 
-//////////////////////////////////////////////////////////////
 /** Filter stories to only show favorites */
 $("#nav-favorites").on("click", showFavoritesOnly);
 function showFavoritesOnly() {
@@ -54,7 +62,6 @@ function showFavoritesOnly() {
   $addStory.hide();
 }
 
-//////////////////////////////////////////////////////////////
 /** Filter stories to only show user posted stories */
 $("#nav-my-stories").on("click", showMyStories);
 function showMyStories() {

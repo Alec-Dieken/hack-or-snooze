@@ -34,32 +34,42 @@
     <main id="main-container">
       <!-- top navigation bar -->
       <nav>
-        <div class="navbar-brand">
-          <h1>>Hack or Snooze</h1>
+        <div id="logo" class="navbar-brand">
+          <h1><span>></span> Hack or Snooze</h1>
         </div>
-        <div class="nav-left main-nav-links hidden">
-          <a class="nav-link" href="#" id="nav-home">Home</a>
-          <a class="nav-link" href="#" id="nav-submit">Post Story</a>
-          <a class="nav-link" href="#" id="nav-favorites">Favorites</a>
-          <a class="nav-link" href="#" id="nav-my-stories">My Stories</a>
-        </div>
-        <div class="nav-right">
-          <a class="nav-link" href="#" id="nav-login">login/signup</a>
-          <a class="nav-link" href="#" id="nav-user-profile"></a>
-          <a class="hidden" id="nav-logout" href="#"><small>(logout)</small></a>
+        <div id="nav-main-container">
+          <div class="nav-left main-nav-links hidden">
+            <a class="nav-link" href="#" id="nav-home">Home</a>
+            <a class="nav-link" href="#" id="nav-submit">Post Story</a>
+            <a class="nav-link" href="#" id="nav-favorites">Favorites</a>
+            <a class="nav-link" href="#" id="nav-my-stories">My Stories</a>
+          </div>
+          <div class="nav-right">
+            <a class="nav-link" href="#" id="nav-login">login/signup</a>
+            <a class="nav-link" href="#" id="nav-user-profile"></a>
+            <a class="hidden" id="nav-logout" href="#"
+              ><small>(logout)</small></a
+            >
+          </div>
         </div>
       </nav>
 
       <section id="add-story" class="hidden" method="post">
         <form id="add-story-form">
-          <label for="author">Author:</label>
-          <input type="text" id="author" name="author" required />
+          <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required />
+          </div>
 
-          <label for="title">Title:</label>
-          <input type="text" id="title" name="title" required />
+          <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+          </div>
 
-          <label for="url">URL:</label>
-          <input type="url" id="url" name="url" required />
+          <div>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" required />
+          </div>
 
           <button>Post</button>
         </form>
@@ -140,5 +150,6 @@
     <script src="js/favorites.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/mystories.js"></script>
+    <script src="js/responsive.js"></script>
   </body>
 </html>

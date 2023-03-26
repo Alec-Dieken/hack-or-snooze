@@ -20,6 +20,7 @@
 
 .stories-list > li::before {
   content: "\00BB";
+  font-size: 1.5em;
 }
 
 #stories-loading-msg {
@@ -64,8 +65,24 @@
   padding: 20px 0;
   border-bottom: solid 1px gray;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
 }
 
-#add-story-form > input{
-  margin-right: 15px;
+
+@media screen and (max-width: 850px) {
+  #add-story-form{
+    flex-direction: column;
+    justify-content: baseline;
+  }
+
+  #add-story-form > div {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

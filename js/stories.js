@@ -7,9 +7,7 @@ let myStories = new Set();
 /** Get and show stories when site first loads. */
 async function getAndShowStoriesOnStart() {
   storyList = await StoryList.getStories();
-
   $storiesLoadingMsg.remove();
-
   putStoriesOnPage();
 }
 
@@ -18,7 +16,7 @@ async function getAndShowStoriesOnStart() {
  * - story: an instance of Story
  *
  * Returns the markup for the story.
- */
+ **/
 function generateStoryMarkup(story) {
   const hostName = story.getHostName(story.url);
 
@@ -34,7 +32,9 @@ function generateStoryMarkup(story) {
     `);
 }
 
-/** Gets list of stories from server, generates their HTML, and puts on page. */
+/** 
+ * Gets list of stories from server, generates their HTML, and puts on page.
+ **/
 function putStoriesOnPage() {
   $allStoriesList.empty();
 
@@ -47,8 +47,9 @@ function putStoriesOnPage() {
   $allStoriesList.show();
 }
 
-/////////////////////////////////////////////////////////////////
-// Add story from form and update stories
+/**
+ * Add story from form and update stories
+ **/
 $("#add-story-form").on("submit", submitNewStory);
 
 async function submitNewStory(e) {
@@ -66,4 +67,3 @@ async function submitNewStory(e) {
 
   $("#title").val(""), $("#author").val(""), $("#url").val("");
 }
-/////////////////////////////////////////////////////////////////
