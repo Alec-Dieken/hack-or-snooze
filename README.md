@@ -20,7 +20,7 @@ Hack-or-Snooze is a simple, user-friendly web app that connects to the [hack-or-
 You can use the live demo at: [https://alec-dieken.github.io/hack-or-snooze/](https://alec-dieken.github.io/hack-or-snooze/)
 <br/><br/>
 Or:
-<br/><br/>
+<br/>
 1. Clone the repository:
 ```
 git clone https://github.com/your-username/hack-or-snooze.git
@@ -30,5 +30,5 @@ git clone https://github.com/your-username/hack-or-snooze.git
 cd hack-or-snooze
 ```
 3. Open the `index.html` file in your preferred browser.
-
+<br/>
 ## Usage
