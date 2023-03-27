@@ -5,7 +5,7 @@ Hack-or-Snooze is a simple, user-friendly web app that connects to the [hack-or-
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- Structure
+- [Structure](#structure)
 
 ## Features
 - User authentication (Sign Up, Log In, and Log Out)
